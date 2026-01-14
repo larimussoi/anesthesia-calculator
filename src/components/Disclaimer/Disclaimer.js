@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const Disclaimer = () => {
@@ -22,7 +21,7 @@ const DisclaimerContainer = styled.div`
   padding: 15px;
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  text-align: center;
   gap: 10px;
 `;
 

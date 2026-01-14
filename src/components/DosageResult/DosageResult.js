@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { medications } from "../../data/medications";
 
@@ -9,7 +8,7 @@ const DosageResult = ({ results, medication, indication, onClear }) => {
   return (
     <ResultContainer>
       <ResultHeader>
-        <ResultTitle>✅ Resultado do Cálculo</ResultTitle>
+        <ResultTitle>Resultado do Cálculo</ResultTitle>
         <ClearButton onClick={onClear}>🗑️ Limpar</ClearButton>
       </ResultHeader>
 
@@ -49,7 +48,7 @@ const DosageResult = ({ results, medication, indication, onClear }) => {
 
       {adjustments && adjustments.length > 0 && (
         <AdjustmentsSection>
-          <AdjustmentsTitle>⚠️ Considerações Clínicas</AdjustmentsTitle>
+          <AdjustmentsTitle>Considerações Clínicas</AdjustmentsTitle>
           {adjustments.map((adjustment, index) => (
             <AdjustmentItem key={index}>• {adjustment}</AdjustmentItem>
           ))}
@@ -57,7 +56,6 @@ const DosageResult = ({ results, medication, indication, onClear }) => {
       )}
 
       <SafetyNote>
-        <SafetyIcon>🛡️</SafetyIcon>
         <SafetyText>
           <strong>Lembre-se:</strong> Este cálculo é uma referência inicial.
           Sempre considere o contexto clínico completo, comorbidades e
@@ -90,7 +88,7 @@ const ResultTitle = styled.h3`
 `;
 
 const ClearButton = styled.button`
-  background: #e74c3c;
+  background: #e85848;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -100,7 +98,7 @@ const ClearButton = styled.button`
   transition: background 0.3s;
 
   &:hover {
-    background: #c0392b;
+    background: #ef8276;
   }
 `;
 
@@ -136,7 +134,7 @@ const ResultGrid = styled.div`
 `;
 
 const ResultCard = styled.div`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #9b67d0 100%);
   color: white;
   padding: 20px;
   border-radius: 12px;
@@ -189,11 +187,6 @@ const SafetyNote = styled.div`
   display: flex;
   align-items: flex-start;
   gap: 12px;
-`;
-
-const SafetyIcon = styled.span`
-  font-size: 20px;
-  flex-shrink: 0;
 `;
 
 const SafetyText = styled.p`

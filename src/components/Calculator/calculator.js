@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import PatientForm from "../PatientForm/PatientForm";
 import DosageResult from "../DosageResult/DosageResult";
@@ -14,7 +14,7 @@ const Calculator = () => {
   return (
     <Container>
       <Header>
-        <Title>🏥 Calculadora de Dosagem Anestésica</Title>
+        <Title>Calculadora de Dosagem Anestésica</Title>
         <Subtitle>Ferramenta auxiliar para cálculos anestésicos</Subtitle>
       </Header>
 

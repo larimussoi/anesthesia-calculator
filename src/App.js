@@ -62,8 +62,8 @@ function App() {
 
       <Footer>
         <FooterText>
-          Desenvolvido para fins educacionais | Sempre consulte protocolos
-          médicos oficiais
+          Desenvolvido por Larissa Tomé Mussoi para fins educacionais | Sempre
+          consulte protocolos médicos oficiais
         </FooterText>
       </Footer>
     </AppContainer>

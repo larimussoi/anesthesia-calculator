@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -8,11 +7,13 @@ import { medications } from "../../data/medications";
 const schema = yup.object({
   weight: yup
     .number()
+    .typeError("Digite um peso válido (apenas números)")
     .required("Peso é obrigatório")
     .min(1, "Peso mínimo: 1kg")
     .max(200, "Peso máximo: 200kg"),
   age: yup
     .number()
+    .typeError("Digite uma idade válida (apenas números)")
     .required("Idade é obrigatória")
     .min(0, "Idade mínima: 0 anos")
     .max(120, "Idade máxima: 120 anos"),
