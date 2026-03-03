@@ -160,6 +160,9 @@ const getAdjustments = (patient, age, medication) => {
         adjustments.push("Maior risco de hipotensão em idosos");
       }
       break;
+
+    default:
+      break;
   }
 
   return adjustments;

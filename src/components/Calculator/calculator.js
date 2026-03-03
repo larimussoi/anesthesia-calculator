@@ -77,4 +77,39 @@ const Subtitle = styled.p`
   font-size: 16px;
 `;
 
+const TabContainer = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+`;
+
+const Tab = styled.button`
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: ${(props) => (props.active ? "#2c3e50" : "#ecf0f1")};
+  color: ${(props) => (props.active ? "#fff" : "#2c3e50")};
+  border-radius: 5px;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+`;
+
+const Content = styled.div`
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+`;
+
+const CalculatorTab = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
 export default Calculator;
